@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <category>
+        <pattern>于鹏是我大哥</pattern>
+        <template>大哥怎么还不找大嫂？</template>
+    </category>
+    <category>
+	    <pattern>*最帅*</pattern>
+	    <template>
+			 Shark
+	    </template>
+	</category>
+	<category>
+	    <pattern>*最肥*</pattern>
+	    <template>
+			 Donkey
+	    </template>
+	</category>
+	<category>
+		    <pattern>我是*</pattern>
+		    <template>
+		 		 哈哈，<star/>最近怎么样呀?
+		    </template>
+	</category>
+	<category>
+		<pattern>我叫*</pattern>
+		<template>
+		<think>
+			<set name="name">
+			<formal><star/></formal>
+			</set>
+		</think>
+			哈哈，<get name="name"/>，别来无恙啊
+		</template>
+	</category>
+</aiml>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <category>
+        <pattern>*帅吗</pattern>
+        <template>帅到爆棚</template>
+    </category>
+    <category>
+	    <pattern>晚安*</pattern>
+	    <template>
+			 好的，晚安，做个好梦哈～
+	    </template>
+	</category>
+	<category>
+		    <pattern>我是*</pattern>
+		    <template>
+		 		 哈哈，<star/>最近怎么样呀?
+		    </template>
+	</category>
+	<category>
+		<pattern>我叫*</pattern>
+		<template>
+		<think>
+			<set name="name">
+			<formal><star/></formal>
+			</set>
+		</think>
+			哈哈，<get name="name"/>，别来无恙啊
+		</template>
+	</category>
+</aiml>
